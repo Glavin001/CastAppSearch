@@ -8,7 +8,7 @@ const config: webpack.Configuration = {
         "./src/index.tsx",
     ],
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'docs'),
         filename: "bundle.js",
     },
 
@@ -24,7 +24,7 @@ const config: webpack.Configuration = {
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
-            title: 'react-hot-ts',
+            title: 'Cast App Search',
             chunksSortMode: 'dependency',
             template: path.resolve(__dirname, './src/index.ejs')
         }),
